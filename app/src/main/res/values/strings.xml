@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Pro-Tasker</string>
+    <string name="todo">TODO</string>
+    <string name ="title">Title</string>
+    <string name ="notes">Notes</string>
+    <string name ="addNote">Add Task</string>
+    <string name="updateNote">Update Note</string>
+    <string name="enterTitle">Please enter the title</string>
+    <string name="desc">Description</string>
+    <string name="date">DD/MM/YY</string>
+    <string name="time">1:00AM</string>
+</resources>

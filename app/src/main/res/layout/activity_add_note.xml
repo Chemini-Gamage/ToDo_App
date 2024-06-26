@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddNoteActivity"
+    android:background="@drawable/background2">
+
+    <TextView
+        android:id="@+id/addNoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="6dp"
+        android:text="@string/addNote"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_done_task_24"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/addNoteHeading"
+        android:layout_marginEnd="6dp"
+        android:clickable="true"
+        android:onClick="onSaveButtonClick" />
+
+
+    <ImageView
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_alignTop="@id/addNoteHeading"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/clock_foreground" />
+
+    <ImageView
+        android:id="@+id/calandarButton"
+        android:layout_width="56dp"
+        android:layout_height="42dp"
+        android:layout_alignTop="@id/addNoteHeading"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="30dp"
+        android:clickable="true"
+        android:src="@drawable/calender_foreground" />
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/enterTitle"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/addNoteHeading"
+        android:background="@drawable/orange"
+        android:layout_marginTop="16dp"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="372dp"
+        android:layout_height="451dp"
+        android:layout_below="@id/titleEditText"
+        android:layout_marginTop="135dp"
+        android:background="@drawable/orange"
+        android:gravity="top"
+        android:hint="@string/desc"
+        android:padding="12dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/calendarEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/contentEditText"
+        android:layout_marginTop="-583dp"
+        android:background="@drawable/orange"
+        android:hint="@string/date"
+        android:padding="12dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/clockEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/contentEditText"
+        android:layout_marginTop="-515dp"
+        android:background="@drawable/orange"
+        android:hint="@string/time"
+        android:padding="12dp"
+        android:textSize="20sp" />
+
+</RelativeLayout>
